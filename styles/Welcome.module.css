@@ -1,0 +1,119 @@
+.container{
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wrapper{
+    display: flex;
+    top: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+}
+
+.item{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.message{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #fff;
+}
+
+.itemOne{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 100%;
+    background: linear-gradient(
+                  to right bottom,
+                  rgba(255, 255, 255, 0.4),
+                  rgba(255, 255, 255, 0.1)
+  );
+    box-shadow: 1px 1px 2px #333;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.word{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.arrowContainer{
+    width: 10%;
+    height: 20%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.flagWrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 20px 40px;
+}
+
+.countries{
+    padding: 20px;
+
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 110vh;
+    }
+
+    .wrapper{
+        flex-direction: column;
+        padding-top: 15vh;
+    }
+
+    .itemOne{
+        padding-top: 3rem;
+    }
+
+    .message{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .slider{
+        height: 60vw;
+        width: 60vw;
+    }
+
+    .flagWrapper{
+        margin: 5px;
+    }
+}

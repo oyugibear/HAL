@@ -1,0 +1,63 @@
+.container{
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wrapper{
+    display: flex;
+    top: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+}
+
+.item{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+
+.message{
+    padding-top: 20px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #fff;
+}
+
+.number, .email{
+    padding-top: 20px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #fff;
+}
+
+.itemTwo{
+    padding: 3rem;
+}
+
+.globeImg{
+    width: 20vw;
+    height: 20vh;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        display: flex;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .message{
+        text-align: center;
+    }
+}
