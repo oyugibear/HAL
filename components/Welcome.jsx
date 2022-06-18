@@ -5,6 +5,8 @@ import styles from "../styles/Welcome.module.css"
 const Welcome = () => {
     
     const [index, setIndex] = useState(0);
+    let fclicks = 0;
+    let bclicks = 5;
 
     const texts = [
         "Ethical",
@@ -27,13 +29,26 @@ const Welcome = () => {
     // fix this: increment array value by 1 and display when arrow is clicked vice versa for other arrow (but with decrement)
 
     const changeText = (direction) => {
+
         if(direction === "l"){
+            bclicks -= 1;
             let words = document.getElementById("word");
-            words.innerText = texts[2];           
+            words.innerText = texts[bclicks];
+            
+            if(bclicks < 0){
+                bclicks = 5;
+                words.innerText = texts[bclicks];
+            }
         }
         if(direction === "r"){
+            fclicks += 1;
             let words = document.getElementById("word");
-            words.innerText = texts[3];  
+            words.innerText = texts[fclicks];  
+
+            if(fclicks > 5){
+                fclicks = 0;
+                words.innerText = texts[fclicks];
+            }
         }
 
 

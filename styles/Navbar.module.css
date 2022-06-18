@@ -77,10 +77,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
         z-index: 999;
         color: #fff;
-        transition: 1s all ease-in
-        ;
+        transition: 0.2s all ease-in;
+        box-shadow: #15243C ;
+    }
+
+    .menuItem{
+        margin: 2rem;
     }
 }

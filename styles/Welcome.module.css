@@ -25,7 +25,7 @@
 }
 
 .message{
-    font-family: 'Montserrat';
+    padding-top: 2rem;
     font-weight: 400;
     color: #fff;
 }
@@ -76,8 +76,8 @@
 
 .flagWrapper{
     display: flex;
-    align-items: flex-start;
-    justify-content: start;
+    justify-content: flex-start;
+    left: 0;
     padding: 20px 40px;
 }
 
@@ -115,5 +115,6 @@
 
     .flagWrapper{
         margin: 5px;
+        margin-bottom: 30px;
     }
 }
