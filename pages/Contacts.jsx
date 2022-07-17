@@ -7,7 +7,7 @@ const Contacts = () => {
             <div className={styles.wrapper}>
                 <div className={styles.item}>
                     <span className={styles.wImage}>
-                        <Image src="/img/logo.png" width="431"height="134" />
+                        <Image src="/img/logo.png" width="431"height="134"  alt=""/>
                     </span>
                     <div className={styles.message}>
                         Have an inquiry, feel free to contact us
@@ -25,7 +25,7 @@ const Contacts = () => {
 
                 <div className={styles.itemTwo}>
                     <span className={styles.globeImg}>
-                        <Image src="/img/africaimg.png" width="400" height="400" />
+                        <Image src="/img/africaimg.png" width="400" height="400" alt="" />
                     </span>
                 </div>
 

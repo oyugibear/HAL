@@ -61,7 +61,7 @@ const Welcome = () => {
             <div className={styles.wrapper}>
                 <div className={styles.item}>
                     <span className={styles.wImage}>
-                        <Image src="/img/logo.png" width="431"height="134" />
+                        <Image src="/img/logo.png" width="431"height="134" alt=""/>
                     </span>
                     <h2 className={styles.message}>
                         HAL Group manages all your it solutions for you and
@@ -72,7 +72,7 @@ const Welcome = () => {
                 <div className={styles.itemOne}>
                     <div className={styles.slider}>
                         <div className={styles.arrowContainer}>
-                            <Image src = "/img/arrowr.png" width="10" height="20" style={{left:0}} onClick={() => changeText("l")} objectFit="contain"/>
+                            <Image src = "/img/arrowr.png" width="10" height="20" style={{left:0}} onClick={() => changeText("l")} objectFit="contain" alt=""/>
                         </div>
                         
                         <div className={styles.words}>
@@ -96,13 +96,13 @@ const Welcome = () => {
             </div>
                 <div className={styles.flagWrapper}>
                     <div className={styles.countries}>
-                        <Image src="/img/ke.png" width="60" height="60" />
+                        <Image src="/img/ke.png" width="60" height="60" alt="" />
                     </div>
                     <div className={styles.countries}>
-                        <Image src="/img/oman.png" width="60" height="60" />
+                        <Image src="/img/oman.png" width="60" height="60" alt=""/>
                     </div>
                     <div className={styles.countries}>
-                        <Image src="/img/tz.png" width="60" height="60" />
+                        <Image src="/img/tz.png" width="60" height="60" alt=""/>
                     </div>
                 </div>
         </div>
