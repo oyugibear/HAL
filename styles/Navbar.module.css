@@ -27,6 +27,10 @@
     display: none;
 }
 
+.logo{
+    cursor: pointer;
+}
+
 .menu{
     display: none;
 }
@@ -85,5 +89,8 @@
 
     .menuItem{
         margin: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

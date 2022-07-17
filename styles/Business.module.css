@@ -1,0 +1,115 @@
+.container{
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #fff;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;    
+}
+
+.itemOne{
+    margin: 5rem;
+}
+
+.itemTwo{
+    margin: 5rem;
+}
+
+.barrier{
+    border: 1px solid #fff;
+    height: 40%;
+}
+
+.list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.listWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    justify-content: space-between;
+
+}
+
+.listItem{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.line{
+    width: 20%;
+    height: 1px;
+    background: #fff;
+    align-items: start;
+    justify-content: start;
+    left: 0;
+}
+
+.urlList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.url{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .wrapper{
+        flex-direction: column;
+        width: 120%;
+    }
+
+    .barrier{
+        border: 1px solid #fff;
+        width: 70%;
+    }
+
+    .listWrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    
+    .listItem{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+    }
+
+    .urlList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+    }
+}

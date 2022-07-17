@@ -14,6 +14,12 @@ const Navbar = () => {
     const handleContacts = async () => {
         router.push('/Contacts');
     }
+    const handleTeam = async () => {
+        router.push('/Team');
+    }
+    const handleBusiness = async () => {
+        router.push('/Business');
+    }
 
     const [open, setOpen] = useState(false);
 
@@ -21,13 +27,22 @@ const Navbar = () => {
         <div className={styles.container}>
             <div className={styles.item}>
                 <div className={styles.logo}>
-                    <Image src="/img/logo.png" fill="" width="265" height="50" className={styles.logoImg}/>
+                    <Link href='/'>
+                        <a>
+                        <Image src="/img/logo.png" fill="" width="195" height="50" className={styles.logoImg}/>
+                        </a>
+                    </Link>
                 </div>
             </div>
             <div className={styles.item}>
                 <ul className={styles.list}>
                     <li className={styles.listItem} onClick={handleHome}> Home </li>
-                    <li className={styles.listItem}>Business Lines</li>
+                    <li className={styles.listItem} onClick={handleTeam}> Team </li>  
+                    <Link href='/Business'>
+                        <a>
+                        <li className={styles.listItem}>Business Lines</li>
+                        </a>
+                    </Link>     
                     <li className={styles.listItem} onClick={handleContacts}>Contact Us</li>
                 </ul>
             </div>
@@ -38,7 +53,8 @@ const Navbar = () => {
             </div>
             <ul onClick={() => setOpen(false)} className={styles.menu} style={{right: open ? "0px" : "-50vw"}}>
                 <li className={styles.menuItem} onClick={handleHome}> Home </li>
-                <li className={styles.menuItem}>Business Lines</li>
+                <li className={styles.listItem} onClick={handleTeam}> Team </li> 
+                <li className={styles.menuItem} onClick={handleBusiness}>Business Lines</li>
                 <li className={styles.menuItem} onClick={handleContacts}>Contact Us</li>
             </ul>
         </div>
