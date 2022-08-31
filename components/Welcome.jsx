@@ -63,10 +63,10 @@ const Welcome = () => {
                     <span className={styles.wImage}>
                         <Image src="/img/logo.png" width="431"height="134" alt=""/>
                     </span>
-                    <h2 className={styles.message}>
+                    {/* <h2 className={styles.message}>
                         HAL Group manages all your it solutions for you and
                         Gives you access to them wherever and whenever.
-                    </h2>
+                    </h2> */}
 
                 </div>
                 <div className={styles.itemOne}>
