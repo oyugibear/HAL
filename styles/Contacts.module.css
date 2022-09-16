@@ -49,8 +49,9 @@
 
 @media screen and (max-width: 480px) {
     .container{
+        height: calc(100vh - 100px);
         display: flex;
-        padding-top: 50px
+        padding-top: 50px;
     }
 
     .wrapper{
