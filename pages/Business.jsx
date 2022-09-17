@@ -12,9 +12,9 @@ const Business = () => {
             <hr align="left" className={styles.line}/>
             <p>Click the links below to view our different business lines</p>
             <div className={styles.urlList}>
-                <h3 className={styles.url}>HAL Capital <hr align="center" className={styles.line}/></h3>
-                <h3 className={styles.url}>HAL Africa  <hr align="center" className={styles.line}/></h3>
-                <h3 className={styles.url}>HAL M.E.N.A <hr align="center" className={styles.line}/></h3>
+                <h3 className={styles.url}><a href="https://halcapital.org/"> HAL Capital </a> <hr align="center" className={styles.line}/></h3>
+                <h3 className={styles.url}><a href="https://hal-africa.com/"> HAL Africa </a>  <hr align="center" className={styles.line}/></h3>
+                <h3 className={styles.url}><a href="https://www.halmena.com/"> HAL MENA </a>  <hr align="center" className={styles.line}/></h3>
             </div>
           </div>
         </div>
